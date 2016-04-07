@@ -1,0 +1,6 @@
+<!ELEMENT map (entry+)>
+<!ELEMENT entry EMPTY>
+<!ATTLIST entry
+  key    CDATA #REQUIRED
+  value  CDATA #REQUIRED
+>

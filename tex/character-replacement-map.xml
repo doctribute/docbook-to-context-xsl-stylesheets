@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+
+<!-- ===================================================================== -->
+<!-- http://docbook.sourceforge.net/release/xsl/current/doc/copyright.html -->
+<!-- Copyright (c) 2006 Ben Guillon                                        -->
+<!-- Copyright (c) 2016 Jan Tosovsky                                       -->
+<!-- ===================================================================== -->
+
+<!-- 
+   TeX characters mapping
+   ======================
+   The order is important: for example, '\' must be replaced first by 
+   a backslash, because other escaping '\' is added later!
+   The last <entry> completes the first replacement.
+-->
+
+<!DOCTYPE map SYSTEM "map.dtd"
+[
+  <!ENTITY nbsp  "&#x000A0;" >
+  <!ENTITY ldquo "&#x0201C;" >
+  <!ENTITY rdquo "&#x0201D;" >
+  <!ENTITY tilde "&#x002DC;" >
+]>
+<map>
+   <entry key="\textbackslash"   value="\\"/>
+   <entry key="&nbsp;"           value="~"/>
+   <entry key="&ldquo;"          value="{}``"/>
+   <entry key="&rdquo;"          value="{}''"/>
+   <entry key="&lt;"             value="$&lt;$"/>
+   <entry key="&gt;"             value="$&gt;$"/>
+   <entry key="&tilde;"          value="\textasciitilde{}"/>
+   <entry key="{"                value="\{"/>
+   <entry key="}"                value="\}"/>
+   <entry key="&amp;"            value="\&amp;"/>
+   <entry key="#"                value="\#"/>
+   <entry key="_"                value="\_"/>
+   <entry key="$"                value="\$"/>
+   <entry key="%"                value="\%"/>
+   <entry key="\"                value="\textbackslash"/>
+</map>

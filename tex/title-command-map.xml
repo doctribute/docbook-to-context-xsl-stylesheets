@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<!DOCTYPE map SYSTEM "map.dtd" []>
+
+<!-- ===================================================================== -->
+<!-- http://docbook.sourceforge.net/release/xsl/current/doc/copyright.html -->
+<!-- Copyright (c) 2006 Ben Guillon                                        -->
+<!-- Copyright (c) 2016 Jan Tosovsky                                       -->
+<!-- ===================================================================== -->
+
+<map>
+   <entry key="preface"        value="&#10;\chapter"/>
+   <entry key="dedication"     value="&#10;\title"/>
+   <entry key="part"           value="&#10;\part"/>
+   <entry key="chapter"        value="&#10;\chapter"/>
+   <entry key="sect1"          value="&#10;\section"/>
+   <entry key="sect2"          value="&#10;\subsection"/>
+   <entry key="sect3"          value="&#10;\subsubsection"/>
+   <entry key="sect4"          value="&#10;\subsubsubsection"/>
+   <entry key="sect5"          value="&#10;\subsubsubsubsection"/>
+   <entry key="simplesect-1"   value="&#10;\title"/>
+   <entry key="simplesect-2"   value="&#10;\subject"/>
+   <entry key="simplesect-3"   value="&#10;\subsubject"/>
+   <entry key="simplesect-4"   value="&#10;\subsubsubject"/>
+   <entry key="simplesect-5"   value="&#10;\subsubsubsubject"/>     <!-- TBD -->
+   <entry key="simplesect-6"   value="&#10;\subsubsubsubsubject"/>  <!-- TBD -->
+   <entry key="refnamediv"     value="&#10;\subject"/>
+   <entry key="refsynopsisdiv" value="&#10;\subject"/>
+   <entry key="reference"      value="&#10;\title"/>
+   <entry key="refentry"       value="&#10;\section*"/>             <!-- TBD -->
+   <entry key="refsect1"       value="&#10;\subject"/>
+   <entry key="refsect2"       value="&#10;\subsubject"/>
+   <entry key="refsect3"       value="&#10;\subsubsubject"/>
+</map>
