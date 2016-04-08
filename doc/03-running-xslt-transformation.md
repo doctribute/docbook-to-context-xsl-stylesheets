@@ -10,13 +10,13 @@ Supposing [Saxon 6.5.5](http://saxon.sourceforge.net/saxon6.5.5/) is used and th
 ```
 D:\docbook
 +-- docbook-system
-|   +-- [4.5](http://www.docbook.org/xml/4.5/docbook-xml-4.5.zip)
+|   +-- 4.5 (http://www.docbook.org/xml/4.5/docbook-xml-4.5.zip)
 |   |   +-- calstblx.dtd
 |   |   +-- catalog.xml
 |   |   +-- ...
 |   +-- ...
 +-- docbook-xsl-stylesheets
-|   +-- [1.79.1](https://sourceforge.net/projects/docbook/files/docbook-xsl/1.79.1/)
+|   +-- 1.79.1 (https://sourceforge.net/projects/docbook/files/docbook-xsl/1.79.1/)
 |   |   +-- assembly
 |   |   +-- common
 |   |   +-- context (new folder)
@@ -34,8 +34,8 @@ D:\docbook
 |   +-- ...
 +-- tools
 |   +-- CatalogManager.properties (see bellow)
-|   +-- [resolver.jar](http://www.apache.org/dist/xerces/xml-commons/xml-commons-resolver-1.2.zip)
-|   +-- [saxon.jar](https://sourceforge.net/projects/saxon/files/saxon6/6.5.5/)
+|   +-- resolver.jar (http://www.apache.org/dist/xerces/xml-commons/xml-commons-resolver-1.2.zip)
+|   +-- saxon.jar (https://sourceforge.net/projects/saxon/files/saxon6/6.5.5/)
 ```
 
 1. Create a plain text file `CatalogManager.properties` with the following content
