@@ -82,14 +82,8 @@
 
    <xsl:template name="orderedlist-starting-number">
       <xsl:param name="list" select="."/>
-      <xsl:variable name="pi-start">
-         <xsl:call-template name="pi.context_start">
-            <xsl:with-param name="node" select="$list"/>
-         </xsl:call-template>
-      </xsl:variable>
       <xsl:call-template name="output-orderedlist-starting-number">
          <xsl:with-param name="list" select="$list"/>
-         <xsl:with-param name="pi-start" select="$pi-start"/>
       </xsl:call-template>
    </xsl:template>
 
