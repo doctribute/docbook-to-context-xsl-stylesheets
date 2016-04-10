@@ -24,14 +24,24 @@
       </xsl:variable>
       <xsl:choose>
          <xsl:when test="$isFromRange = 0">
+            <xsl:variable name="command">
+               <xsl:choose>
+                  <xsl:when test="see|seealso">
+                     <xsl:text>\see</xsl:text>
+                     <xsl:value-of select="$name"/>
+                  </xsl:when>
+                  <xsl:otherwise>
+                     <xsl:text>\</xsl:text>
+                     <xsl:value-of select="$name"/>
+                  </xsl:otherwise>
+               </xsl:choose>
+            </xsl:variable>
             <xsl:choose>
-               <xsl:when test="see|seealso">
-                  <xsl:text>\leftboundary\hbox{\see</xsl:text>
-                  <xsl:value-of select="$name"/>
+               <xsl:when test="parent::title or parent::subtitle or parent::bridgehead">
+                  <xsl:value-of select="$command"/>
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:text>\leftboundary\hbox{\</xsl:text>
-                  <xsl:value-of select="$name"/>
+                  <xsl:value-of select="concat('\leftboundary\hbox{', $command)"/>
                </xsl:otherwise>
             </xsl:choose>
          </xsl:when>
@@ -96,7 +106,8 @@
          <xsl:text>}</xsl:text>
       </xsl:if>
 
-      <xsl:if test="$isFromRange = 0">
+      <xsl:if
+         test="$isFromRange = 0 and not(parent::title or parent::subtitle or parent::bridgehead)">
          <xsl:text>}</xsl:text>
       </xsl:if>
    </xsl:template>
