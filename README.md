@@ -17,9 +17,9 @@ For your convenience, the result of an XSLT transformation can be downloaded dir
 
 * [Final PDF](http://doctribute.com/blog/resources/003/final.pdf) (3.9 MB).
 
-The red grid is provided as a separate PDF layer and can be switched off.
-
 This output needs further tweaks. Namely fixing lines exceeding the text area by [setting the less strict alignment tolerance](https://github.com/doctribute/docbook-projects/tree/master/books/sa-mekyzo-czolany-nycbytora). However, majority of cases are caused by inability to properly hyphenate those dummy words. In the real content such occurrences should be rare.
+
+The red grid is provided as a separate PDF layer and in e.g. Acrobat Reader it can be [switched off](http://doctribute.com/blog/resources/003/layers.png). A drawback of this visualization are blue and yellow boxes shown in the back-of-the-book index. It will be improved in an upcoming ConTeXt version. Anyway, it is just a minor issue as this visualization is used for debugging purposes only.
 
 Motivation
 ----------
